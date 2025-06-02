@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buzón Anónimo | Serenity Lab</title>
+  
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- 🌍 Navbar -->
+    <nav class="fixed top-0 w-full bg-white shadow-md py-4 px-8 flex justify-between items-center z-50">
+        <h1 class="text-3xl font-extrabold text-pink-600">Serenity Lab</h1>
+        <ul class="flex space-x-6 text-lg">
+            <li><a href="../index.html" class="hover:text-pink-600 transition">Inicio</a></li>
+            <li><a href="iniciosesion.html" class="hover:text-pink-600 transition">Login</a></li>
+            <li><a href="buzon.html" class="hover:text-pink-600 transition">Buzón anónimo</a></li>
+            <li><a href="psicologos.html" class="hover:text-pink-600 transition">Nuestros profesionales</a></li>
+        </ul>
+    </nav>
+
+    <!-- 📬 Sección de Buzón -->
+    <section class="h-screen flex items-center justify-center mt-10">
+        <div class="bg-white shadow-lg rounded-lg p-10 max-w-md w-full">
+            <h2 class="text-3xl font-bold text-center text-pink-600">Buzón Anónimo</h2>
+            <p class="text-lg text-gray-600 text-center mt-2">Comparte cómo te sientes de manera segura y sin juicios.</p>
+            
+            <form class="mt-6">
+                <textarea class="w-full border rounded-lg p-3 mt-4 focus:ring-2 focus:ring-blue-500" rows="6" placeholder="Escribe aquí cómo te sientes..."></textarea>
+                <button type="submit" class="w-full bg-pink-600 text-white font-bold py-3 px-6 rounded-lg mt-6 hover:bg-pink-700 transition">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 📌 Footer -->
+    <footer class="bg-gray-900 text-white py-10 text-center">
+        <p class="text-lg">&copy; 2025 Serenity Lab | Contacto: info@serenitylab.com</p>
+    </footer>
+
+</body>
+</html>

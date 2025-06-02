@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Serenity Lab</title>
+  
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-100 via-purple-200 to-pink-100 text-gray-800">
+
+   <!-- 🌍 Navbar -->
+    <nav class="fixed top-0 w-full bg-white shadow-md py-4 px-6 flex justify-between items-center z-50">
+    <h1 class="text-3xl font-extrabold text-pink-600">Serenity Lab</h1>
+
+    <!-- Botón hamburguesa -->
+    <input type="checkbox" id="menu-toggle" class="hidden peer">
+    <label for="menu-toggle" class="lg:hidden text-3xl text-pink-600 cursor-pointer">
+        ☰
+    </label>
+
+    <!-- Menú de navegación -->
+    <ul class="hidden peer-checked:block lg:flex space-x-6 absolute top-14 left-0 w-full bg-white shadow-md p-4 lg:static lg:w-auto lg:shadow-none">
+        <li><a href="../index.html" class="block text-lg hover:text-pink-600 transition">Inicio</a></li>
+        <li><a href="iniciosesion.html" class="block text-lg hover:text-pink-600 transition">Login</a></li>
+        <li><a href="buzon.html" class="block text-lg hover:text-pink-600 transition">Buzón anónimo</a></li>
+        <li><a href="psicologos.html" class="block text-lg hover:text-pink-600 transition">Nuestros profesionales</a></li>
+    </ul>
+
+    
+</nav>
+
+<!-- 🎓 Interfaz de Usuario Estudiante Mejorada -->
+<section class="mt-32 mb-32 h-screen flex flex-col lg:flex-row items-center justify-center gap-10">
+    <!-- Tarjeta de perfil del estudiante -->
+    <div class="bg-white shadow-2xl rounded-lg p-10 max-w-md w-full text-center">
+        <h2 class="text-3xl font-bold text-pink-600">Juan David Montoya</h2>
+        <p class="mt-2 text-gray-600">Estudiante técnico laboral</p>
+        <p class="text-gray-600">Asistente en desarrollo de software</p>
+        <img src="../assets/img/avatar5.png" class="w-40 h-40 mx-auto mt-4 rounded-full object-cover" alt="Foto del estudiante">
+    </div>
+
+    <!-- Tarjeta de agendamiento de citas -->
+    <div class="bg-white shadow-2xl rounded-lg p-10 max-w-lg w-full">
+        <h3 class="text-2xl font-bold text-gray-700">Agendar Cita</h3>
+        <form class="mt-4 space-y-6">
+            <!-- Selección de psicólogo -->
+            <div>
+                <label class="block text-lg font-semibold text-gray-700">Selecciona el psicólogo</label>
+                <select class="w-full border rounded-lg p-3 mt-2 focus:ring-4 focus:ring-blue-500 transition">
+                    <option value="" disabled selected>-- Selecciona el psicólogo --</option>
+                    <option>Dr. Lorenzo Saenz </option>
+                    <option>Dra. Susana Cespedes </option>
+                    <option>Dra. Alexandra Orellana</option>
+                </select>
+            </div>
+
+            <!-- Selección de fecha y hora -->
+            <div>
+                <label class="block text-lg font-semibold text-gray-700">Selecciona día y hora</label>
+                <input type="datetime-local" class="w-full border rounded-lg p-3 mt-2 focus:ring-4 focus:ring-blue-500 transition">
+            </div>
+
+            <!-- Botones de acción -->
+            <div class="flex justify-between">
+                <button type="submit" class="bg-pink-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-pink-700 transition transform hover:scale-105">
+                    Guardar Cita
+                </button>
+                <a href="../index.html" class="bg-gray-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-600 transition transform hover:scale-105">
+                    Volver al Inicio
+                </a>
+            </div>
+        </form>
+    </div>
+</section>
+
+</body>

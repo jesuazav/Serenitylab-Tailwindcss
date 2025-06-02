@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Serenity Lab</title>
+  
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-100 via-purple-200 to-pink-100 text-gray-800">
+
+   <!-- 🌍 Navbar -->
+    <nav class="fixed top-0 w-full bg-white shadow-md py-4 px-6 flex justify-between items-center z-50">
+    <h1 class="text-3xl font-extrabold text-pink-600">Serenity Lab</h1>
+
+    <!-- Botón hamburguesa -->
+    <input type="checkbox" id="menu-toggle" class="hidden peer">
+    <label for="menu-toggle" class="lg:hidden text-3xl text-pink-600 cursor-pointer">
+        ☰
+    </label>
+
+    <!-- Menú de navegación -->
+    <ul class="hidden peer-checked:block lg:flex space-x-6 absolute top-14 left-0 w-full bg-white shadow-md p-4 lg:static lg:w-auto lg:shadow-none">
+        <li><a href="../index.html" class="block text-lg hover:text-pink-600 transition">Inicio</a></li>
+        <li><a href="iniciosesion.html" class="block text-lg hover:text-pink-600 transition">Login</a></li>
+        <li><a href="buzon.html" class="block text-lg hover:text-pink-600 transition">Buzón anónimo</a></li>
+        <li><a href="psicologos.html" class="block text-lg hover:text-pink-600 transition">Nuestros profesionales</a></li>
+    </ul>
+</nav>
+
+   <!-- 📝 Sección Registro -->
+<section class="h-screen flex items-center justify-center mt-48 mb-24">
+    <div class="bg-white shadow-lg rounded-lg p-10 max-w-md w-full">
+        <h2 class="text-3xl font-bold text-center text-pink-600 animate-fadeIn">Regístrate</h2>
+        
+        <form class="mt-6 space-y-6">
+            <!-- Nombre Completo -->
+            <div>
+                <label class="block text-lg font-semibold text-gray-700">Nombre Completo</label>
+                <input type="text" class="w-full border rounded-lg p-3 mt-2 focus:ring-4 focus:ring-blue-500 transition placeholder-gray-400" placeholder="Ej. Juan Pérez" required>
+            </div>
+
+            <!-- Correo Electrónico -->
+            <div>
+                <label class="block text-lg font-semibold text-gray-700">Correo Electrónico</label>
+                <input type="email" class="w-full border rounded-lg p-3 mt-2 focus:ring-4 focus:ring-blue-500 transition placeholder-gray-400" placeholder="usuario@example.com" required>
+            </div>
+
+            <!-- Contraseña -->
+            <div>
+                <label class="block text-lg font-semibold text-gray-700">Contraseña</label>
+                <input type="password" class="w-full border rounded-lg p-3 mt-2 focus:ring-4 focus:ring-blue-500 transition placeholder-gray-400" placeholder="********" required>
+            </div>
+
+            <!-- Confirmar Contraseña -->
+            <div>
+                <label class="block text-lg font-semibold text-gray-700">Confirmar Contraseña</label>
+                <input type="password" class="w-full border rounded-lg p-3 mt-2 focus:ring-4 focus:ring-blue-500 transition placeholder-gray-400" placeholder="********" required>
+            </div>
+
+            <!-- Botón de Registro -->
+            <button type="submit" class="w-full bg-pink-600 text-white font-bold py-3 px-6 rounded-lg mt-6 hover:bg-pink-700 transition transform hover:scale-105">
+                Registrarse
+            </button>
+        </form>
+
+        <!-- Enlace para iniciar sesión -->
+        <p class="mt-6 text-center text-gray-600">
+            ¿Ya tienes una cuenta? 
+            <a href="iniciosesion.html" class="text-pink-600 font-bold hover:underline">
+                Inicia sesión aquí
+            </a>
+        </p>
+    </div>
+</section>
+
+
+     <!-- 📌 Footer -->
+    <footer class="bg-gray-900 text-white py-10 text-center">
+        <div class="max-w-5xl mx-auto flex flex-wrap justify-evenly items-start gap-y-8 text-center md:text-left">
+            <div>
+                <h4 class="text-xl font-semibold">Contacto</h4>
+                <p class="mt-2">📍 Bello: Diagonal 50a #38-20 (Tierragro), piso 5</p>
+                <p class="mt-1">📧 bienestarestudiantil@cesde.edu.co</p>
+                <p class="mt-1">📞 316 354 66 17 | (604) 480 88 22</p>
+            </div>
+
+            <div class="px-18">
+                <h4 class="text-xl font-semibold">Ubicación geográfica</h4>
+                <iframe class="w-full h-40 rounded-lg mt-2"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.4325243175094!2d-75.5454113!3d6.3379818000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442f11a205b239%3A0xa3974aa926dbfac1!2sCesde%20sede%20norte!5e0!3m2!1ses!2sco!4v1746219660722!5m2!1ses!2sco"></iframe>
+            </div>
+
+            <div>
+                <h4 class="text-xl font-semibold">Redes sociales</h4>
+                <div class="flex justify-center space-x-4 mt-2">
+                    <a href="https://co.linkedin.com/company/cesde-formaci%C3%B3n-t%C3%A9cnica"><img src="../assets/iconos/linkedin.png" class="w-8 h-8"></a>
+                    <a href="https://www.facebook.com/Cesde/?locale=es_LA"><img src="../assets/iconos/facebook.png" class="w-8 h-8"></a>
+                    <a href="https://www.instagram.com/cesdeoficial/?hl=es"><img src="../assets/iconos/instagram.png" class="w-8 h-8"></a>
+                    <a href="https://www.youtube.com/c/SomosCESDE"><img src="../assets/iconos/youtube.png" class="w-8 h-8"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
