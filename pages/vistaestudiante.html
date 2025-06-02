@@ -31,23 +31,20 @@
 </nav>
 
 <!-- 🎓 Interfaz de Usuario Estudiante Mejorada -->
-<section class="mt-32 mb-32 h-screen flex flex-col lg:flex-row items-center justify-center gap-10">
-    <!-- Tarjeta de perfil del estudiante -->
-    <div class="bg-white shadow-2xl rounded-lg p-10 max-w-md w-full text-center">
-        <h2 class="text-3xl font-bold text-pink-600">Juan David Montoya</h2>
-        <p class="mt-2 text-gray-600">Estudiante técnico laboral</p>
-        <p class="text-gray-600">Asistente en desarrollo de software</p>
-        <img src="../assets/img/avatar5.png" class="w-40 h-40 mx-auto mt-4 rounded-full object-cover" alt="Foto del estudiante">
+<section class="mt-32 mb-16 flex flex-col md:flex-row items-center justify-center gap-8 px-4">
+    <div class="bg-white shadow-2xl rounded-lg p-6 sm:p-8 max-w-md w-full text-center">
+        <h2 class="text-2xl sm:text-3xl font-bold text-pink-600">Juan David Montoya</h2>
+        <p class="mt-2 text-gray-600 text-sm sm:text-base">Estudiante técnico laboral</p>
+        <p class="text-gray-600 text-sm sm:text-base">Asistente en desarrollo de software</p>
+        <img src="../assets/img/avatar5.png" class="w-32 h-32 sm:w-40 sm:h-40 mx-auto mt-4 rounded-full object-cover" alt="Foto del estudiante">
     </div>
 
-    <!-- Tarjeta de agendamiento de citas -->
-    <div class="bg-white shadow-2xl rounded-lg p-10 max-w-lg w-full">
-        <h3 class="text-2xl font-bold text-gray-700">Agendar Cita</h3>
-        <form class="mt-4 space-y-6">
-            <!-- Selección de psicólogo -->
+    <div class="bg-white shadow-2xl rounded-lg p-6 sm:p-8 max-w-lg w-full">
+        <h3 class="text-xl sm:text-2xl font-bold text-gray-700">Agendar Cita</h3>
+        <form class="mt-4 space-y-4 sm:space-y-6">
             <div>
-                <label class="block text-lg font-semibold text-gray-700">Selecciona el psicólogo</label>
-                <select class="w-full border rounded-lg p-3 mt-2 focus:ring-4 focus:ring-blue-500 transition">
+                <label class="block text-base sm:text-lg font-semibold text-gray-700">Selecciona el psicólogo</label>
+                <select class="w-full border rounded-lg p-2 sm:p-3 mt-1 sm:mt-2 focus:ring-4 focus:ring-blue-500 transition text-sm sm:text-base">
                     <option value="" disabled selected>-- Selecciona el psicólogo --</option>
                     <option>Dr. Lorenzo Saenz </option>
                     <option>Dra. Susana Cespedes </option>
@@ -55,23 +52,20 @@
                 </select>
             </div>
 
-            <!-- Selección de fecha y hora -->
             <div>
-                <label class="block text-lg font-semibold text-gray-700">Selecciona día y hora</label>
-                <input type="datetime-local" class="w-full border rounded-lg p-3 mt-2 focus:ring-4 focus:ring-blue-500 transition">
+                <label class="block text-base sm:text-lg font-semibold text-gray-700">Selecciona día y hora</label>
+                <input type="datetime-local" class="w-full border rounded-lg p-2 sm:p-3 mt-1 sm:mt-2 focus:ring-4 focus:ring-blue-500 transition text-sm sm:text-base">
             </div>
 
-            <!-- Botones de acción -->
-            <div class="flex justify-between">
-                <button type="submit" class="bg-pink-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-pink-700 transition transform hover:scale-105">
+            <div class="flex flex-col sm:flex-row justify-between gap-4 sm:gap-0">
+                <button type="submit" class="bg-pink-600 text-white font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-lg hover:bg-pink-700 transition transform hover:scale-105 text-base sm:text-lg w-full sm:w-auto">
                     Guardar Cita
                 </button>
-                <a href="../index.html" class="bg-gray-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-600 transition transform hover:scale-105">
+                <a href="../index.html" class="bg-gray-500 text-white font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-lg hover:bg-gray-600 transition transform hover:scale-105 text-base sm:text-lg w-full sm:w-auto text-center">
                     Volver al Inicio
                 </a>
             </div>
         </form>
     </div>
 </section>
-
 </body>
