@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body class="bg-gradient-to-br from-blue-100 via-purple-200 to-pink-100 text-gray-800">
     <!-- ✉️ Buzón de Mensajería -->
-<section class="mt-32 mb-32 h-screen flex items-center justify-center">
-    <div class="bg-white shadow-2xl rounded-lg p-10 max-w-lg w-full">
-        <h3 class="text-2xl font-bold text-gray-700">📩 Buzón de Mensajes Anónimos</h3>
-        <p class="text-gray-600 mt-2">Aquí puedes leer y responder mensajes enviados por usuarios.</p>
+    <section class="mt-32 mb-32 h-screen flex items-center justify-center">
+        <div class="bg-white shadow-2xl rounded-lg p-10 max-w-lg w-full">
+            <h3 class="text-2xl font-bold text-gray-700">📩 Buzón de Mensajes Anónimos</h3>
+            <p class="text-gray-600 mt-2">Aquí puedes leer y responder mensajes enviados por usuarios.</p>
 
-        <!-- Listado de mensajes -->
-        <div class="mt-6 space-y-4">
-            <div class="bg-gray-200 rounded-lg p-4 flex flex-col">
-                <p class="text-lg font-bold text-gray-800">Anónimo</p>
-                <p class="text-gray-700 mt-1">"Estoy teniendo dificultades para dormir debido a la ansiedad."</p>
-                <button class="bg-pink-600 text-white py-2 px-4 rounded-lg mt-4 hover:bg-pink-700 transition">Responder</button>
+            <!-- Listado de mensajes -->
+            <div class="mt-6 space-y-4">
+                <div class="bg-gray-200 rounded-lg p-4 flex flex-col">
+                    <p class="text-lg font-bold text-gray-800">Anónimo</p>
+                    <p class="text-gray-700 mt-1">"Estoy teniendo dificultades para dormir debido a la ansiedad."</p>
+                    <button
+                        class="bg-pink-600 text-white py-2 px-4 rounded-lg mt-4 hover:bg-pink-700 transition">Responder</button>
+                </div>
+
+                <div class="bg-gray-200 rounded-lg p-4 flex flex-col">
+                    <p class="text-lg font-bold text-gray-800">Anónimo</p>
+                    <p class="text-gray-700 mt-1">"Me siento solo y quiero ayuda para mejorar mi bienestar emocional."
+                    </p>
+                    <button
+                        class="bg-pink-600 text-white py-2 px-4 rounded-lg mt-4 hover:bg-pink-700 transition">Responder</button>
+                </div>
+
+                <div class="bg-gray-200 rounded-lg p-4 flex flex-col">
+                    <p class="text-lg font-bold text-gray-800">Anónimo</p>
+                    <p class="text-gray-700 mt-1">"He estado teniendo pensamientos negativos últimamente."</p>
+                    <button
+                        class="bg-pink-600 text-white py-2 px-4 rounded-lg mt-4 hover:bg-pink-700 transition">Responder</button>
+                </div>
             </div>
 
-            <div class="bg-gray-200 rounded-lg p-4 flex flex-col">
-                <p class="text-lg font-bold text-gray-800">Anónimo</p>
-                <p class="text-gray-700 mt-1">"Me siento solo y quiero ayuda para mejorar mi bienestar emocional."</p>
-                <button class="bg-pink-600 text-white py-2 px-4 rounded-lg mt-4 hover:bg-pink-700 transition">Responder</button>
-            </div>
-
-            <div class="bg-gray-200 rounded-lg p-4 flex flex-col">
-                <p class="text-lg font-bold text-gray-800">Anónimo</p>
-                <p class="text-gray-700 mt-1">"He estado teniendo pensamientos negativos últimamente."</p>
-                <button class="bg-pink-600 text-white py-2 px-4 rounded-lg mt-4 hover:bg-pink-700 transition">Responder</button>
+            <!-- Botón de acción -->
+            <div class="flex justify-between mt-6">
+                <a href="vistapsicologo.html"
+                    class="bg-gray-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-600 transition transform hover:scale-105">
+                    Volver al Menu
+                </a>
             </div>
         </div>
-
-        <!-- Botón de acción -->
-        <div class="flex justify-between mt-6">
-            <a href="vistapsicologo.html" class="bg-gray-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-600 transition transform hover:scale-105">
-                Volver al Menu
-            </a>
-        </div>
-    </div>
-</section>
+    </section>
 
 </body>
+
 </html>

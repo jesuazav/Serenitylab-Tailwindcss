@@ -7,43 +7,83 @@
     <title>Serenity Lab | Bienestar Mental</title>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    
+
     <style>
-    /* Animación de los fotogramas clave para el efecto de deslizamiento */
-    @keyframes slide {
-        0% { opacity: 0; } /* Inicia completamente transparente */
-        10% { opacity: 1; } /* Empieza a mostrarse */
-        30% { opacity: 1; } /* Se mantiene visible */
-        40% { opacity: 0; } /* Empieza a desaparecer */
-        100% { opacity: 0; } /* Permanece transparente hasta el final del ciclo */
-    }
+        /* Animación de los fotogramas clave para el efecto de deslizamiento */
+        @keyframes slide {
+            0% {
+                opacity: 0;
+            }
 
-    .carousel video {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Asegura que el video cubra el área sin distorsionarse */
-        border-radius: 0.5rem; /* Equivalente a 'rounded-lg' de Tailwind */
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Equivalente a 'shadow-lg' de Tailwind */
-        opacity: 0; /* Inicialmente oculto */
-        animation: slide 12s infinite; /* Duración total de la animación para cada video */
-    }
+            /* Inicia completamente transparente */
+            10% {
+                opacity: 1;
+            }
 
-    /* Retrasos de la animación para cada video para que aparezcan secuencialmente */
-    .carousel video:nth-child(1) { animation-delay: 0s; } /* Primer video, aparece inmediatamente */
-    .carousel video:nth-child(2) { animation-delay: 4s; } /* Segundo video, aparece 3 segundos después */
-    .carousel video:nth-child(3) { animation-delay: 8s; } /* Tercer video, aparece 6 segundos después */
+            /* Empieza a mostrarse */
+            30% {
+                opacity: 1;
+            }
 
-    /* Ajustes responsivos para pantallas más pequeñas (celulares) */
-    @media (max-width: 639px) { /* Este punto de quiebre es común para dispositivos móviles */
-        .carousel {
-            min-height: 50vh; /* Ajusta la altura mínima para pantallas de celulares */
-            max-width: 98%;
-            
+            /* Se mantiene visible */
+            40% {
+                opacity: 0;
+            }
+
+            /* Empieza a desaparecer */
+            100% {
+                opacity: 0;
+            }
+
+            /* Permanece transparente hasta el final del ciclo */
         }
-    }
-</style>
- 
+
+        .carousel video {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Asegura que el video cubra el área sin distorsionarse */
+            border-radius: 0.5rem;
+            /* Equivalente a 'rounded-lg' de Tailwind */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            /* Equivalente a 'shadow-lg' de Tailwind */
+            opacity: 0;
+            /* Inicialmente oculto */
+            animation: slide 12s infinite;
+            /* Duración total de la animación para cada video */
+        }
+
+        /* Retrasos de la animación para cada video para que aparezcan secuencialmente */
+        .carousel video:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        /* Primer video, aparece inmediatamente */
+        .carousel video:nth-child(2) {
+            animation-delay: 4s;
+        }
+
+        /* Segundo video, aparece 3 segundos después */
+        .carousel video:nth-child(3) {
+            animation-delay: 8s;
+        }
+
+        /* Tercer video, aparece 6 segundos después */
+
+        /* Ajustes responsivos para pantallas más pequeñas (celulares) */
+        @media (max-width: 639px) {
+
+            /* Este punto de quiebre es común para dispositivos móviles */
+            .carousel {
+                min-height: 50vh;
+                /* Ajusta la altura mínima para pantallas de celulares */
+                max-width: 98%;
+
+            }
+        }
+    </style>
+
 </head>
 
 <body class="bg-gradient-to-br from-blue-100 via-purple-200 to-pink-100 text-gray-800">
@@ -69,20 +109,20 @@
         </ul>
     </nav>
 
-     <!-- 🎞️ Hero con carrusel de videos -->
+    <!-- 🎞️ Hero con carrusel de videos -->
     <section class="pt-24 text-center">
-    <div class="carousel relative w-full min-h-screen overflow-hidden">
-        <video autoplay loop muted playsinline>
-            <source src="assets/videos/banner1.mp4" type="video/mp4">
-        </video>
-        <video autoplay loop muted playsinline>
-            <source src="assets/videos/banner2.mp4" type="video/mp4">
-        </video>
-        <video autoplay loop muted playsinline>
-            <source src="assets/videos/banner3.mp4" type="video/mp4">
-        </video>
-    </div>
-</section>
+        <div class="carousel relative w-full min-h-screen overflow-hidden">
+            <video autoplay loop muted playsinline>
+                <source src="assets/videos/banner1.mp4" type="video/mp4">
+            </video>
+            <video autoplay loop muted playsinline>
+                <source src="assets/videos/banner2.mp4" type="video/mp4">
+            </video>
+            <video autoplay loop muted playsinline>
+                <source src="assets/videos/banner3.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
 
 
     <!-- Sección de Servicios con Imágenes -->

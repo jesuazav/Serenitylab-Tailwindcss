@@ -50,8 +50,8 @@ Para la creación del proyecto SerenityLab, se han empleado las siguientes tecno
 
 * **HTML (HyperText Markup Language):** Utilizado para la estructuración y organización del contenido de las páginas web.
 * **CSS (Cascading Style Sheets):** Empleado para definir la presentación visual y el diseño de las páginas, incluyendo colores, fuentes y otros aspectos estéticos.
-* **CSS Externo:** Se utilizarán archivos CSS separados del código HTML para mantener una mejor organización y facilitar la gestión de los estilos del sitio web.
-* **Componentes para Separar y Organizar los Estilos:** Se adoptará una metodología de desarrollo CSS basada en componentes para asegurar la modularidad, reutilización y fácil mantenimiento de los estilos a lo largo del proyecto.
+ **Tailwind CSS:**
+Tailwind CSS: Como framework CSS base, Tailwind ha sido fundamental para la estilización y la implementación del diseño responsivo. Su enfoque de clases de utilidad ("utility-first") ha permitido construir interfaces personalizadas de manera eficiente y mantener una alta coherencia en el diseño, facilitando la creación de componentes modulares y el mantenimiento de los estilos a lo largo de todo el proyecto.
 
 ---
 
